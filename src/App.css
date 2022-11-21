@@ -1,17 +1,26 @@
 body {
     background-color: rgb(255, 255, 255);
     padding: 40px 0px;
+    transition: 0.4s;
 }
 
 .App {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .sortPanel {  
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.productsContainer {
+    min-width: 920px;
+}
+
+.buttonContainer {
+    display: contents;
 }
