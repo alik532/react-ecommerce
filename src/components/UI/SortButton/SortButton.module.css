@@ -1,0 +1,14 @@
+.sortButton {
+    width: auto;
+    height: 34px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: rgb(246, 183, 11) dashed 2px;
+}
+
+.sortButton:hover {
+    background-color: rgb(246, 183, 11);
+    color: black;
+    transition: 0.1s;
+}
