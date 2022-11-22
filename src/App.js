@@ -5,12 +5,14 @@ import data from './ecommerceData'
 import SearchInput from './components/UI/SearchInput/SearchInput';
 import SortButton from './components/UI/SortButton/SortButton';
 import { useState } from 'react';
+import SideBar from './components/SideBar/SideBar';
 
 function App() {
 
+  const [cartIsOpen, setCartIsOpen] = useState(false)
   const [sortType, setSortType] = useState("")
+  const [inCart, setInCart] = useState([])
   const [query, setQuery] = useState("")
-
   
   const getSearchedProducts = () => {
     return data.filter(product =>
@@ -41,6 +43,18 @@ function App() {
     return productList
   }
 
+  const removeFromCart = (item) => {
+    let flag = 0
+    let newList = [...inCart].filter(i => {
+      if (i === item && !flag){
+        flag = 1
+        return false
+      }
+      return true
+    })
+    setInCart(newList)
+  }
+
   return (
     <div className="App">
       <div className='sortPanel'>
@@ -51,8 +65,9 @@ function App() {
       </div>
       <div className='productsContainer'>
         {getFilteredProducts(sortType).length} Product(s) found
-        <ProducList products={getFilteredProducts(sortType)}/>
+        <ProducList products={getFilteredProducts(sortType)} addToCart={product => setInCart([...inCart, product])}/>
       </div>
+      <SideBar items={inCart} cartIsOpen={cartIsOpen} setCartIsOpen={setCartIsOpen} addToCart={(item) => setInCart([...inCart, item])} removeFromCart={removeFromCart}/>
     </div>
   );
 }

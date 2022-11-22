@@ -1,0 +1,110 @@
+.cartButton > * {
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    font-weight: 100;
+}
+
+.cartButton {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    right: 0;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    border: 2px rgb(246, 183, 11) dashed;
+    border-radius: 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiCwwQEgYn7+gWAAABQklEQVRIx9WTsUoDQRRF72xMYSFokcRCjBFESGWRwtZe8AtEFFNrI1bB0tLGQuzs/AJB8AO2kZRCxBiRQNKIoIYoyLFwCZuss9nNgpBXzc7be3j3zow09mU48321zVF8gNtbZ5Q1UwmGYQPIxFU5vnVdUuHfARO+OD5oa9GzM6NcbICkem+CLZ0kA1zKHQ2w6tlpqRUN4AwA5knFiTAISGsuHqDfwoOkgp4kUkoP1WI+Azt02ZYk9hle3cAEBh69c7iKEOJ30IJU/71KpqbaKCH6b0LEGgTcaYXpeIj+GJf54pyI70CSTACxq1M5ehmqvDCHfwIkFrQW4S1WzXUCq+E5lNhkMqSfo0ze3t7hlWeqIfJ3GnQo2n644ZhZYMnSL9OQcKnYAHs0ueUeY+nn6eDyRskGcFjngGxIBkUqVvk41g+oBJ136GBf8AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0xMS0xMlQxNjoxODowNiswMTowMEVm3zEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMTEtMTJUMTY6MTg6MDYrMDE6MDA0O2eNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==");
+}
+
+.cartPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    background-color:rgba(12, 11, 16, 0.95);
+    width: 450px;
+    height: 100%;
+    top: 0;
+    right: -450px;   
+}
+
+.cartButton:hover {
+    background-color: black;
+}
+
+.countItems {
+    background-color: rgb(246, 183, 11);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 2;
+    color: black;
+    font-weight: bolder;
+}
+
+.cartHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0px;
+    padding-top: 10%;
+    padding-bottom: 15px;
+    border-bottom: 2px goldenrod dashed;
+}
+
+.cartHeader > h3 > img {
+    width: max-content;
+    height: max-content;
+    margin-right: 10px;
+}
+
+.cartContent {
+    overflow-y: scroll;
+    max-height: 70%;
+}
+
+.cartFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px goldenrod dashed;
+}
+
+.cartFooter > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.cartFooter > button {
+    width: 80%;
+    height: 40px;
+    color: white;
+    background-color: black;
+}
+
+.subtotal {
+    margin-right: 220px;
+}
+
+.paycheckPrice {
+    font-size: 18px;
+    color: goldenrod;
+}
+
+.cartFooter > button:hover {
+    color: black;
+    transition: 0.2s;
+    background-color: rgb(180, 135, 13);
+}
