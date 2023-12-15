@@ -1,0 +1,70 @@
+.agentList {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 30px;
+}
+.panel {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 42%;
+    background-color: #ece8e1;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 40px;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.leftArr {
+    width: 54px;
+    height: 40px;
+}
+
+.rigthArr {
+    width: 45px;
+    transform: scale(-1.2);
+    height: 35px;
+    
+}
+
+.arrows {
+    filter: saturate(0);
+    margin: 20px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rigthArr:hover {
+    transform: scale(-1.38);
+    transition: ease-in-out 0.1s;
+}
+
+.leftArr:hover {
+    transform: scale(1.26);
+    transition: ease-in-out 0.1s;
+}
+
+.dot.active {
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    transition: 0.1s;
+}

@@ -1,0 +1,39 @@
+.mapCard {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    background-color: #53212B;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 10px 10px #53212b82;
+    filter:saturate(0.6);
+    
+}
+
+.title {
+    font-size: 90px;
+    text-decoration: solid;
+    margin: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.518);
+    width: max-content;
+    border-radius: 6px;
+    padding: 5px 10px; 
+}
+
+.mapCard:hover .title {
+    transition: 0.3s;
+    transform: scale(1.36);
+    margin-left: 110px;
+    margin-top: 110px;
+    background-color: #f02c40d1;
+    color: #53212B;
+    transition: ease-in-out 0.3s;
+}
+
+.mapCard:hover {
+    box-shadow: none;
+    transition: 0.2s;
+    filter:saturate(1);
+    transition: ease-in-out 0.3s;
+
+}

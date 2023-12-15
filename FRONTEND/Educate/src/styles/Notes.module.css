@@ -1,0 +1,115 @@
+.notes {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	gap: 30px;
+	width: 100%;
+}
+
+.title {
+	font-size: 40px;
+}
+
+.back {
+	cursor: pointer;
+	max-width: 100px;
+	border: none;
+	background-color: #121212;
+	color: white;
+	font-size: 18px;
+	padding: 17px 30px;
+	border-radius: 60px;
+	transition: .2s;
+}
+
+.back:hover {
+	transform: scale(1.1);
+}
+.notesList {
+	padding-bottom: 100px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}
+
+.note {
+	min-width: 94%;
+	font-weight: 700;
+	transition: .2s;
+	position: relative;
+	background-color: #fefaef;
+	padding: 30px;
+	box-shadow: inset 0px 0px 10px 3px #121212;
+	border-radius: 40px;
+}
+
+.deleteNote {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	align-items: center;
+	justify-content: center;
+	color: #fefaef;
+	background-color: #121212;
+	border: none;
+	top: 0;
+	bottom: 0;
+	width: 70px;
+	transition: .2s;
+}
+
+
+.note:hover .deleteNote {
+	display: flex;
+}
+
+
+.deleteNote:hover {
+	background-color: #404040;
+}
+
+.icon {
+	width: 26px;
+	height: 26px;
+}
+
+.addNote {
+	position: absolute;
+	bottom: 50px;
+	width: 800px;
+	fill: #121212;
+	border-radius: 5px;
+	background-color: #121212;
+	display: flex;
+	justify-content: space-between;
+	font-size: 21px;
+}
+
+.input {
+	font-size: 19px;
+	width: 100%;
+	padding: 8px 6px;
+	border: none;
+	color: white;
+	background-color: #121212;
+	outline: none;
+}
+
+.addButton {
+	font-size: 21px;
+	color: white;
+	padding: 8px 15px;
+	background: #121212;
+	border: none;
+	transition: .1s;
+}
+
+.addButton:hover {
+	background-color: #404040;
+}

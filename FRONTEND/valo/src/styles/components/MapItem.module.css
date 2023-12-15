@@ -1,0 +1,44 @@
+.mapItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0px;
+    gap: 30px;
+    border-top: 4px rgba(34, 13, 13, 0.842) solid;
+    border-bottom: 4px rgba(34, 13, 13, 0.842) solid;
+    border-radius: 13px;
+}
+
+.img {
+    width: 600px;
+    height: 340px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.361);
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 50px 10px;
+}
+
+::-webkit-scrollbar {
+    max-width: 100px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: black 2px solid;
+}
+
+.img:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.15);
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}

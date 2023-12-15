@@ -1,0 +1,29 @@
+
+.maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0px;
+    color: #ece8e1;
+}
+
+.container1 {
+    position: static;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    gap: 400px;
+}   
+
+.container2 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    margin-top: 400px;
+    gap: 400px;
+}
+

@@ -1,0 +1,23 @@
+.selector {
+    width: 260px;
+    height: 50px;
+    font-size: large;
+    border: solid #FD4556 2px;
+    border-radius: 3px;
+    background-color: #ece8e1;
+    border-right: none;
+    border-left: none;
+    color: #53212B;
+    text-transform: uppercase;
+}
+
+.option {
+   font-size: large;
+   box-shadow: rgba(0, 0, 0, 0.395) 10px 10px;
+}
+
+.selector:hover {
+    transition: 0.14s;
+    margin-right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.395) 10px 10px;
+}

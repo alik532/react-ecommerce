@@ -1,0 +1,99 @@
+.course {
+	padding: 60px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	overflow-y: scroll;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.texts {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.title {
+	font-size: 40px;
+}
+
+.imgContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.course button {
+	cursor: pointer;
+	max-width: 200px;
+	border: none;
+	background-color: #121212;
+	color: white;
+	font-size: 18px;
+	padding: 17px 30px;
+	border-radius: 60px;
+	transition: .2s;
+}
+
+.course button:hover {
+	transform: scale(1.1);
+}
+
+.icon {
+	width: 20px;
+	height: auto;
+}
+
+.img {
+	width: 300px;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0px 5px 5px 0px black;
+}
+
+.sentence {
+	margin-right: 5px;
+}
+
+.loader {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: load infinite 1s;
+	border: 8px solid #121212;
+	border-top: 8px solid #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.makeNoteButton {
+	position: absolute;
+	right: 30px;
+	bottom: 100px;
+}
+
+.summary {
+	line-height: 150%;
+	width: 90%;
+	letter-spacing: .5px;
+	word-spacing: 1.4px;	
+}
+
+@keyframes load {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

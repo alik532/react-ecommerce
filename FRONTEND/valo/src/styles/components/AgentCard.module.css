@@ -1,0 +1,76 @@
+.image {
+    height: 800px;
+    filter: drop-shadow(30px 0px #3c121545);
+    margin-right: 20px;
+}
+
+.card {
+    padding-right: 20px;
+    margin-right: 50px;
+    color: #53212B;
+    min-width: 1000px;
+    border: 3px #53212B dashed;
+    width: min-content;
+    height: min-content;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    justify-content: start;
+    margin-top: 50px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.role {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.title {
+    font-size: 60px;
+    border-radius: 3px;
+    border-right: 3px solid #53212B;
+    margin-right: 20px;
+    padding: 0px 10px;
+    font-weight: bolder;
+}
+
+.description {
+    font-size: 20px;
+    background-color: #53212b4d;
+    border-radius: 9px;
+    padding: 10px;
+    border: 2px #53212B solid;
+    padding: 10px;
+}
+
+.button {
+    height: 70px;
+    border-radius: 5px;
+    color: white;
+    border: 2px #53212B solid;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #FD4556;
+    margin-top: 350px;
+}
+
+.button:hover {
+    transition: 0.1s;
+    background-color: #BD3944;
+   
+}

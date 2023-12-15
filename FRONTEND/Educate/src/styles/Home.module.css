@@ -1,0 +1,18 @@
+.home {
+	overflow-y: scroll;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 100%;
+}
+
+.courseList {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: auto auto;
+}
+
+.course {
+	text-decoration: none;
+}
